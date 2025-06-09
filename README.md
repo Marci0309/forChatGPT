@@ -32,6 +32,29 @@ This project aims to create an intelligent and user-friendly AI assistant, desig
 * **Database**: SQL (e.g., PostgreSQL, SQLite) for structured storage.
 * **Frontend**: React.js, focusing on clean and intuitive UX/UI.
 
+## Backend Data and Structure
+
+The backend stores **tasks** with the following fields:
+
+- `title` – short description of the assignment or activity.
+- `due_date` – optional deadline in ISO format.
+- `notes` – any additional remarks.
+
+The `backend/` folder now contains:
+
+- `app.py` – entry point running the FastAPI server.
+- `__init__.py` – application factory and route registration.
+- `models.py` – Pydantic data models.
+- `routes.py` – API endpoints for creating and retrieving tasks.
+- `database.py` – simple SQLite helpers.
+- `nlp_task_parser.py` – example script that parses a natural-language task description.
+
+Run the API with:
+
+```bash
+python backend/app.py
+```
+
 ## Project Milestones (Sub-Goals)
 
 * [ ] **Setup Project Environment and Repository**
