@@ -1,6 +1,6 @@
 """Run the FastAPI application."""
 
-from . import app
+from backend import app
 import uvicorn
 
 if __name__ == "__main__":

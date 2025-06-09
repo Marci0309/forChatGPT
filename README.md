@@ -49,10 +49,19 @@ The `backend/` folder now contains:
 - `database.py` – simple SQLite helpers.
 - `nlp_task_parser.py` – example script that parses a natural-language task description.
 
-Run the API with:
+### Setup and Running the API
+
+Install the required Python packages:
 
 ```bash
-python backend/app.py
+pip install fastapi uvicorn spacy python-dateutil
+python -m spacy download en_core_web_sm
+```
+
+Launch the server with:
+
+```bash
+python -m backend.app
 ```
 
 ## Project Milestones (Sub-Goals)
